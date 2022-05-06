@@ -12,7 +12,7 @@ I have consolidated these script in several parts as follows..
 
 ## Links of all scripts
 
-- [Codeigniter 3 Scripts](tree/main/php_codeigniter3)
+- [Codeigniter 3 Scripts](https://github.com/crsiwal/PHP-Ready-To-Use-Scripts/tree/main/php_codeigniter3)
     - [Upload File to cloud using Codeigniter 3](https://github.com/crsiwal/PHP-Ready-To-Use-Scripts/blob/main/php_codeigniter3/Codeigniter%203%20Uplaod%20Files%20to%20Server%20using%20pho.md#upload-file-to-cloud-using-codeigniter-3)
 - [PHP Script Hacks](https://github.com/crsiwal/PHP-Ready-To-Use-Scripts/tree/main/php_hacks)
 - [PHP MYSQL Scripts](https://github.com/crsiwal/PHP-Ready-To-Use-Scripts/tree/main/php_mysql)
