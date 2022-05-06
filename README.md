@@ -5,10 +5,10 @@ All these script are written by me, if you found any issue/Bug/suggestion please
 
 I have consolidated these script in several parts as follows..
 
-- [Codeigniter 3 Scripts](tree/main/php_codeigniter3)
-- [PHP Script Hacks](tree/main/php_hacks)
-- [PHP MYSQL Scripts](tree/main/php_mysql)
-- [PHP Common Scripts](tree/main/php_scripts)
+- [Codeigniter 3 Scripts](../tree/main/php_codeigniter3)
+- [PHP Script Hacks](../tree/main/php_hacks)
+- [PHP MYSQL Scripts](../tree/main/php_mysql)
+- [PHP Common Scripts](../tree/main/php_scripts)
 
 ## Links of all scripts
 
