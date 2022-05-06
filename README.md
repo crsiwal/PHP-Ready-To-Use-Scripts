@@ -5,18 +5,18 @@ All these script are written by me, if you found any issue/Bug/suggestion please
 
 I have consolidated these script in several parts as follows..
 
-- [Codeigniter 3 Scripts](../tree/main/php_codeigniter3)
-- [PHP Script Hacks](../tree/main/php_hacks)
-- [PHP MYSQL Scripts](../tree/main/php_mysql)
-- [PHP Common Scripts](../tree/main/php_scripts)
+- [Codeigniter 3 Scripts](https://github.com/crsiwal/PHP-Ready-To-Use-Scripts/tree/main/php_codeigniter3)
+- [PHP Script Hacks](https://github.com/crsiwal/PHP-Ready-To-Use-Scripts/tree/main/php_hacks)
+- [PHP MYSQL Scripts](https://github.com/crsiwal/PHP-Ready-To-Use-Scripts/tree/main/php_mysql)
+- [PHP Common Scripts](https://github.com/crsiwal/PHP-Ready-To-Use-Scripts/tree/main/php_scripts)
 
 ## Links of all scripts
 
 - [Codeigniter 3 Scripts](tree/main/php_codeigniter3)
-    - [Upload File to cloud using Codeigniter 3](blob/main/php_codeigniter3/Codeigniter%203%20Uplaod%20Files%20to%20Server%20using%20pho.md#upload-file-to-cloud-using-codeigniter-3)
-- [PHP Script Hacks](tree/main/php_hacks)
-- [PHP MYSQL Scripts](tree/main/php_mysql)
-- [PHP Common Scripts](tree/main/php_scripts)
+    - [Upload File to cloud using Codeigniter 3](https://github.com/crsiwal/PHP-Ready-To-Use-Scripts/blob/main/php_codeigniter3/Codeigniter%203%20Uplaod%20Files%20to%20Server%20using%20pho.md#upload-file-to-cloud-using-codeigniter-3)
+- [PHP Script Hacks](https://github.com/crsiwal/PHP-Ready-To-Use-Scripts/tree/main/php_hacks)
+- [PHP MYSQL Scripts](https://github.com/crsiwal/PHP-Ready-To-Use-Scripts/tree/main/php_mysql)
+- [PHP Common Scripts](https://github.com/crsiwal/PHP-Ready-To-Use-Scripts/tree/main/php_scripts)
 
 ## 💻 Contributing
 
