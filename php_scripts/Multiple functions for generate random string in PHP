@@ -1,0 +1,11 @@
+<?php
+echo "rand() => " . rand() . "<br>";
+echo "mt_rand() => " . mt_rand() . "<br>";
+
+echo "uniqid() => " . uniqid() . "<br>";
+
+echo "random_bytes() => " . bin2hex(random_bytes(3)) . "<br>";
+
+echo "random_int() => " . random_int(100000, 9999999999) . "<br>";
+
+echo "openssl_random_pseudo_bytes() => " . bin2hex(openssl_random_pseudo_bytes(3)) . "<br>";
