@@ -1,0 +1,63 @@
+<?php
+// Create a new image with a specified width and height
+$width = 1024;
+$height = 2120;
+$image = imagecreatetruecolor($width, $height);
+
+// Set the background color of the image
+$background_color = imagecolorallocate($image, 255, 255, 255);
+imagefill($image, 0, 0, $background_color);
+
+// Define the HTML text to be rendered as an image
+$html_text = "
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dignissim enim ac ipsum scelerisque, ac congue nisi vestibulum. Pellentesque consequat nunc at maximus convallis. Cras venenatis elementum tristique. Proin rutrum rhoncus scelerisque. Proin vitae volutpat magna, id varius odio. Donec sed mattis enim. Nullam pretium sit amet leo eu fermentum. Integer feugiat laoreet eros. Maecenas pharetra, dui sed blandit porttitor, lorem ipsum tristique felis, laoreet viverra massa dolor ut elit.
+
+Suspendisse potenti. Cras gravida neque eget rutrum commodo. Vivamus tristique sit amet nunc elementum sagittis. Mauris commodo eget metus ac volutpat. Phasellus ullamcorper lobortis diam sed ultrices. Suspendisse dignissim at metus vitae tristique. Mauris vel augue gravida, tincidunt lectus eu, vulputate erat. Etiam sit amet faucibus leo. Mauris vitae blandit augue. Sed volutpat velit arcu, vel efficitur ante scelerisque a. Duis cursus tellus leo, a sollicitudin urna consequat in. Praesent bibendum libero ac ipsum rhoncus, vitae ullamcorper arcu gravida.
+
+Nunc sit amet molestie leo. Proin viverra vel orci sit amet semper. Aliquam purus dui, semper at ex sed, venenatis molestie erat. Donec condimentum lacinia diam nec consectetur. Pellentesque augue nunc, dictum ut ultrices vel, placerat at purus. Fusce est sem, porttitor eget viverra quis, porttitor at enim. Etiam nec lacinia nulla. Praesent vulputate mollis pretium. Suspendisse bibendum ornare lectus quis eleifend. Praesent elementum in massa interdum luctus. Nam convallis fermentum tellus, ut molestie urna. Suspendisse potenti. Pellentesque pulvinar tortor commodo porttitor tincidunt.
+
+Aliquam erat volutpat. Curabitur eget nunc laoreet, luctus nibh a, gravida metus. Nulla sed lacus euismod, pharetra massa ut, ultrices tortor. Fusce sit amet metus tincidunt, maximus urna a, fringilla massa. Vivamus nec justo nec orci elementum iaculis. Pellentesque augue elit, efficitur finibus urna ut, fringilla bibendum lectus. Aliquam consequat, est ut tempus porta, metus risus facilisis nibh, sit amet pellentesque tellus mauris ac justo. Vivamus convallis mauris mauris, non laoreet velit feugiat ut. Mauris auctor, diam in sodales blandit, dolor sem eleifend lacus, ac sollicitudin eros lectus id purus. Maecenas quis enim luctus, ornare mauris facilisis, dictum ex. Mauris leo lorem, tempor sed mauris nec, aliquet convallis lorem. Duis a odio feugiat, dictum tellus eu, pretium elit.
+
+Praesent tempor scelerisque eros sit amet sagittis. Nam eleifend euismod molestie. Aenean iaculis velit ac malesuada blandit. Nulla sagittis ultrices tellus vitae tempus. Suspendisse nec magna et tellus molestie sagittis. Donec vitae nibh rhoncus, posuere ipsum id, sagittis sem. Mauris semper eget diam id tempor. Nullam at pretium ligula, ut dapibus nulla. Morbi cursus tellus ac enim vehicula iaculis. Integer sodales lacinia orci congue imperdiet. Proin sit amet est a velit consequat fringilla. Suspendisse sagittis odio eu ultrices bibendum. Nullam quis ultricies metus. Morbi viverra, velit ut placerat accumsan, arcu mi euismod nunc, non aliquam neque mauris sed mauris. Sed sit amet varius purus, a gravida velit.
+
+Sed at interdum quam. Vivamus pretium, tortor et ornare vulputate, eros mi tincidunt sem, nec mattis elit enim vel ante. Curabitur viverra tincidunt tortor vel iaculis. Morbi et feugiat lorem. Integer neque ligula, dignissim ut suscipit sit amet, tincidunt vitae quam. Donec imperdiet nisl sit amet bibendum aliquam. Donec sollicitudin nisi vitae leo pharetra rutrum. Morbi aliquam volutpat tortor.
+
+Pellentesque ut nibh a ex tincidunt mollis eu ac nisl. Phasellus tempus bibendum ex. Duis euismod magna quis porttitor lobortis. Vivamus non hendrerit leo. Praesent iaculis tempor urna a mattis. Nunc tincidunt semper fringilla. Vestibulum porta mauris nunc, eu efficitur felis facilisis vel.
+
+Pellentesque nec velit rhoncus, mollis diam in, placerat ante. Nulla eget tellus placerat, aliquet orci sit amet, lacinia risus. Maecenas iaculis purus tellus, et tempus tortor porttitor quis. Ut tempor justo arcu, nec tristique leo feugiat a. Donec accumsan bibendum volutpat. Cras malesuada erat et tincidunt ullamcorper. Fusce vel ornare ligula, a bibendum ex.
+
+Etiam finibus placerat metus, eu rutrum leo elementum vitae. Maecenas laoreet odio euismod justo sollicitudin, vitae fermentum ex luctus. Praesent accumsan, purus vitae pellentesque egestas, magna turpis ultricies ante, a gravida magna risus ac nibh. Pellentesque vitae aliquet nisi. In eget euismod turpis. Fusce egestas risus lobortis, egestas augue ac, porta sapien. Phasellus eget volutpat odio. Sed a mauris vel urna venenatis posuere eu eget erat.
+
+Duis ligula odio, efficitur ut libero quis, lacinia vulputate urna. Nam nec euismod diam. Donec vel mi eget augue tincidunt sagittis eget tristique enim. Quisque ultricies condimentum suscipit. Nunc orci turpis, ornare et elit eu, venenatis fermentum erat. Integer molestie pharetra rhoncus. Integer pharetra nibh nisi, in porttitor nibh dictum id. In laoreet justo metus, quis maximus ex tincidunt et. Cras vestibulum varius est, sit amet placerat nulla euismod in.
+
+Cras faucibus, mi sed interdum cursus, arcu lacus vestibulum enim, ut tristique nisi diam quis nunc. Vestibulum ut tempor mi, id feugiat dolor. Curabitur molestie purus et velit convallis tempor. Proin urna nunc, volutpat quis magna cursus, rhoncus ullamcorper augue. Duis sollicitudin maximus dolor, id finibus nulla tristique quis. Donec blandit sit amet turpis eu ultrices. Vestibulum mattis cursus metus sit amet tempor. Suspendisse at eleifend nulla, in tincidunt libero. Nulla luctus dui leo, vel semper dui luctus at. Aliquam erat volutpat. Vestibulum pretium, erat a rutrum dictum, nulla erat ultrices odio, in ullamcorper mauris velit ut magna. Fusce volutpat lacinia dui. Nulla facilisi. Mauris pretium ante quis dapibus porta. Donec facilisis enim eu felis venenatis, non faucibus ex porttitor.
+
+Nullam eget mi vitae justo accumsan porttitor luctus quis nunc. Donec vestibulum sem quis quam mattis, a feugiat orci commodo. Mauris imperdiet eros volutpat velit posuere posuere. Etiam tincidunt magna ut orci gravida, a laoreet erat pulvinar. Pellentesque lacus ex, commodo at ullamcorper dignissim, tincidunt in eros. Vestibulum lobortis magna nunc, non eleifend justo tristique vel. Maecenas consectetur dolor id velit volutpat malesuada. Duis porta velit odio, ut dignissim leo cursus id. Etiam id purus velit. Nam consectetur tincidunt accumsan. Mauris dictum mattis risus ut lobortis. Duis nibh leo, feugiat in ante a, consequat cursus sem.
+
+Proin suscipit risus nec arcu blandit fermentum. Nam lectus enim, placerat id ultrices quis, lobortis nec nisl. Mauris eleifend orci purus, nec feugiat sem euismod a. Donec ut felis eget est fringilla vulputate. Fusce dolor diam, aliquam at augue at, interdum maximus diam. In at urna tincidunt, blandit erat a, faucibus felis. Ut hendrerit est vel fringilla semper.
+
+Quisque feugiat dui sed vehicula laoreet. Nunc a mi fermentum, condimentum ante vitae, vehicula magna. Etiam vel libero efficitur, efficitur velit a, gravida lacus. Nam finibus commodo sem, eget pulvinar lacus pharetra vel. Proin mi elit, tincidunt ac pulvinar ut, tempus ut tellus. Vivamus dictum sem vel nibh posuere pulvinar. Curabitur at pulvinar purus, eget bibendum turpis. Aliquam sed sagittis lectus, in pretium eros. Donec ut dui nec nulla pretium blandit at id ipsum. Fusce id tellus viverra, blandit lectus ac, ultricies metus. Sed tristique mi ut neque tristique placerat. Nunc convallis elementum erat, ac pellentesque massa sodales non.
+";
+
+// Create a new HTML document and add the HTML text to it
+$doc = new DOMDocument();
+$doc->loadHTML($html_text);
+
+// Use the GD library to render the HTML text onto the image
+$render = imagecreatetruecolor($width, $height);
+$white = imagecolorallocate($render, 255, 255, 255);
+imagefill($render, 0, 0, $white);
+$black = imagecolorallocate($render, 0, 0, 0);
+$font_size = 14;
+$font = realpath(".")."\\arial.ttf";
+$html_text = wordwrap($html_text, 110, "\n", true);
+imagettftext($render, $font_size, 0, 20, 10, $black, $font, $html_text);
+$textLength = imagefontwidth($font_size) * strlen($html_text);
+// Output the image as a PNG file
+header('Content-Type: image/png');
+imagepng($render);
+
+// Clean up memory
+imagedestroy($image);
+imagedestroy($render);
+?>
